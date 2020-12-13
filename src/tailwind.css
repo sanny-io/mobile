@@ -1,0 +1,32 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.projects {
+    @apply bg-none;
+}
+
+.project {
+    @apply flex flex-col;
+    @apply bg-dark pt-4 text-center z-40;
+}
+
+.project > h2 {
+    @apply text-2xl font-semibold;
+}
+
+.project > p {
+    @apply pb-10 text-gray-600;
+}
+
+.project > img {
+    @apply mx-auto;
+}
+
+@screen lg {
+    .projects {
+        background-image: url('./components/Projects/sideliner.svg');
+    }
+}
